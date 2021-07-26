@@ -1,0 +1,74 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+                <h1> Happiness meter 🎡</h1>
+                <h2>Accept, be mindful of ups and downs</h2>
+                
+                <div>
+                    <label for="date"> What day is today?
+                    <!-- <input id="date" type="date"> -->
+                    </label>
+                    <select id="date" name="date">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                </div>
+                
+                <label for="input">
+                    How do you feel?
+                    <input id="input" type="number" 
+                min="0" max="10"
+                value="5">
+                </label>
+                
+                <p> 
+                    &#128533; 
+                    &#x1F49C; &#x1F499; 💚 🧡 💛 ❤️
+                    &#128521;<br>
+                       
+                <meter id="energy" 
+                min="0" max="10" 
+                low="5" high="7" optimum="10"
+                value="5"></meter>
+                
+                <p id="message">A pleasant nice day!</p> </p>
+                
+                <div>
+                    <button id="save"> Save 💾 </button>
+                    <button id="reset"> Reset all 🗑️ </button>
+                </div>
+                
+                <table> 
+                    <tr> 
+                        <th> Monday </th>
+                        <th> Tuesday </th>
+                        <th> Wednesday </th>
+                        <th> Thursday </th>
+                        <th> Friday </th>
+                        <th> Saturday </th>
+                        <th> Sunday </th>
+                    </tr>
+                    <tr> 
+                        <th id="Monday"> </th>
+                        <th id="Tuesday"> </th>
+                        <th id="Wednesday"> </th>
+                        <th id="Thursday"> </th>
+                        <th id="Friday"> </th>
+                        <th id="Saturday"> </th>
+                        <th id="Sunday"> </th>
+                    </tr>
+                </table>
+                
+        </div>
+       
+        <script src="index.js"></script>
+    </body>
+</html>
